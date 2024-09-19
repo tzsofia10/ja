@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="webshop.css">
+
+    <title>Webshop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Üzleteink</a></li>
+                <li><a href="">Kapcsolat</a></li>
+            </ul>
+        </nav>
+
+        <div class="kosarikon">
+            <p>0</p><i class="fa fa-shopping-cart"></i>
+        </div>
+    </header>
+
+    <div class="wrapper">
+
+        <main>
+            <div class="itemsBox">
+                <div class="item">
+                    <img src="pic/baby1.jpg" alt="">
+                    <div class="itemInfo">
+                        <h2>Baby Yoda 100</h2>
+                        <p id="num">18600 <span>Ft</span></p>
+                        <input type='number' id='quantity' name='quantity' min='1' max='9' value='1'>
+                        <button type='submit' class='kosarhoz'>Kosárba</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="pic/baby2.jpg" alt="">
+                    <div class="itemInfo">
+                        <h2>Baby Yoda 220</h2>
+                        <p id="num">12600 </p>
+                        <input type='number' id='quantity' name='quantity' min='1' max='9' value='1'>
+                        <button type='submit' class='kosarhoz'>Kosárba</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="pic/baby3.jpg" alt="">
+                    <div class="itemInfo">
+                        <h2>Baby Yoda 202</h2>
+                        <p id="num">10600 <span>Ft</span></p>
+                        <input type='number' id='quantity' name='quantity' min='1' max='9' value='1'>
+                        <button type='submit' class='kosarhoz'>Kosárba</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="pic/baby4.jpg" alt="">
+                    <div class="itemInfo">
+                        <h2>Baby Yoda 204</h2>
+                        <p id="num">15600 <span>Ft</span></p>
+                        <input type='number' id='quantity' name='quantity' min='1' max='9' value='1'>
+                        <button type='submit' class='kosarhoz'>Kosárba</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- kosár tartalma felugró ablakban fog megjelenni-->
+    <div class="cartBox">
+        <div class="cart">
+            <!-- x gomb amivel bezárjuk-->
+            <i class="fa fa-close"></i>
+            <h1>Kosár tartalma</h1>
+            <!-- táblázat, ahová az adatok kerülnek, amikor hozzá adják a kosárhoz-->
+            <table></table>
+        </div>
+    </div>
+
+    <script src="webshop1.js"></script>
+</body>
+
+</html>

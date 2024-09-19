@@ -1,0 +1,140 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     background-image: linear-gradient(black, white, black);
+     background-attachment: fixed;
+ }
+ 
+ .wrapper {
+     max-width: 1000px;
+     margin: 10px auto;
+ }
+ 
+ header {
+     background-color: rgb(153, 148, 148);
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ ul {
+     display: flex;
+     list-style: none;
+     padding: 20px
+ }
+ 
+ li a {
+     text-decoration: none;
+     color: black;
+     margin: 10px;
+     font-size: 18px;
+     font-weight: 600;
+ }
+ /*kosár*/
+ 
+ .kosarikon {
+     cursor: pointer;
+     font-size: 30px;
+     color: darkblue;
+     margin: 10px
+ }
+ 
+ .kosarikon p {
+     padding: 10px;
+     float: left
+ }
+ /*items*/
+ 
+ .itemsBox {
+     display: flex;
+ }
+ 
+ .item {
+     margin: 10px;
+     border: 1px solid black;
+ }
+ 
+ img {
+     width: 100%;
+ }
+ 
+ h2 {
+     margin-left: 10px;
+ }
+ 
+ p {
+     text-align: right;
+     font-size: 20px;
+     font-weight: lighter;
+     padding: 10px;
+     color: #192f44;
+ }
+ 
+ 
+ input{
+    font-size: 0.8rem; 
+    width: 5vw;
+    padding:0.3rem
+ }
+ .kosarhoz{
+    padding:0.3rem;
+    background-color: rgb(60, 184, 81);
+ }
+ /*cartBox- kosár tartalma, felugró ablak*/
+ 
+ .cartBox {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(0, 0, 0, 0.5);
+     transition: 0.3s linear;
+     transform: scale(0);
+ }
+ 
+ .cartBox.active {
+     transform: scale(1);
+ }
+ 
+ .cartBox .cart {
+     position: relative;
+     height: 70%;
+     width: 80%;
+     background: rgba(255, 255, 255, .9);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ .cartBox .cart i {
+     position: absolute;
+     right: 0;
+     top: 0;
+     background: #f00;
+     padding: 10px 15px;
+     color: #fff;
+     cursor: pointer;
+ }
+ 
+ .cartBox .cart i:hover {
+     background: #ff0000a5;
+ }
+ 
+ .cartBox .cart h1 {
+     position: relative;
+     margin-top: 2%;
+     font-size: 2.8rem;
+     color: #173350;
+ }
+ /*felugró ablak táblázatához kell*/
+ th {
+     border: 1px solid black;
+     padding: 10px
+ }
